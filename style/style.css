@@ -1,9 +1,26 @@
-body{
+body {
     margin: 0;
-    font-family: 'Arial', monospace;
+    font-family: "Arial", monospace;
 }
 
 :root {
     --viewport-height: 100%;
 }
 
+/* scroll style */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(59, 59, 59)
+}
+/* end of scroll style */

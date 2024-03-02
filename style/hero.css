@@ -35,22 +35,34 @@
     padding: 0.5rem 0 0.5rem 0;
     background-color: black;
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
-    gap: 1rem;
     overflow: hidden;
+    width: 100%;
 }
 
-.hero-divider-section > span:nth-child(even){
+.hero-divider-section > span{
+    display: inline-block; 
+    white-space: nowrap;
+    animation: marquee-divider 20s infinite linear;
+}
+
+/* space unicode size */
+.hero-divider-section > span > span > span{
+    font-size: 1rem;
+}
+
+/* symbol ✹ bold */
+.hero-divider-section > span > span:nth-child(even){
     font-weight: 800;
 }
 
 @keyframes marquee-divider {
     from{
-        
+        transform: translateX(0%);
     }
     to{
-
+        transform: translateX(-100%);
     }
 }
