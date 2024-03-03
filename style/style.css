@@ -7,6 +7,10 @@ body {
     font-family: "Arial", monospace;
 }
 
+main{
+    background-color: #ffffff;
+}
+
 :root {
     --viewport-height: 100%;
 }

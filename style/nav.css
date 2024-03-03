@@ -4,12 +4,13 @@
 }
 
 nav{
-    padding: 0 5vw 0 5vw;
+    z-index: 99;
+    padding: 2vh 5vw 2vh 5vw;
     width: 100vw;
     position: fixed;
-    margin-top: 2vh;
     display: flex;
     color: white;
+    transition: background-color .5s cubic-bezier(0.075, 0.82, 0.165, 1)
 }
 
 @media screen and (min-width: 600px) {

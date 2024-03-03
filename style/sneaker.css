@@ -1,0 +1,43 @@
+.sneakers-title{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.sneakers-list{
+    display: flex;
+    gap: 2rem;
+    min-height: 22rem;
+    margin: 5rem 0 5rem 0;
+    padding: 0 5vw 0 5vw;
+    overflow: scroll;
+}
+
+.sneakers-list::-webkit-scrollbar{
+    display: none;
+}
+
+.sneakers-card-item:nth-child(odd){
+    align-self: flex-start;
+}
+
+.sneakers-card-item:nth-child(even){
+    align-self: flex-end;
+}
+
+.sneakers-card-item > img{
+    background-color: #f0f0f0;
+    width: 15rem;
+    height: auto;
+}
+
+.sneakers-card-item > p{
+    color: black;
+    font-weight: 700;
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    .sneakers-title{
+        font-size: 4rem;
+    }
+}
